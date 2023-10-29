@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="survey.css">
+  </head>
+  <body>
+    <h1 id="title">My First Survey Form</h1>
+    <p id="description">Thank you for believing in me!</p>
+    <form id="survey-form">
+     <fieldset>
+		<div>
+        <label id="name-label">Name</label>
+        <input id="name" name="name" type="text" placeholder="Who are you?" required>
+		</div>
+		<div>
+        <label id="email-label">Email</label>
+        <input id="email" name="email" type="email" placeholder="What is your email?" required>
+		</div>
+		<div>
+        <label id="number-label">Age</label>
+        <input id="number" name="age" type="number" min="1" max="100" placeholder="How old are you?" required>
+		</div>
+		<div>
+        <label>Why do you believe in me?</label>
+          <select id="dropdown">
+            <option value="">(Select one...)</option>
+            <option value="1">You're cool</option>
+            <option value="2">You're amazing</option>
+            <option value="3">You're awesome</option>
+          </select>
+		</div>
+	</fieldset>
+	<fieldset>
+		<div>
+        <legend>What is the most important thing to learn about web development? (Choose one)</legend>
+          <label><input id="html" name="web-options" type="radio" value="html" class="inline">HTML</label>
+          <label><input id="css" name="web-options" type="radio" value="css" class="inline">CSS</label>
+          <label><input id="js" name="web-options" type="radio" value="js" class="inline">JS</label>
+          <label><input id="all" name="web-options" type="radio" value="all" class="inline">All of these</label>
+		</div>
+	</fieldset>
+	<fieldset>
+		<div>
+			<legend>Okay, I've got checkboxes here, and there's no way I could figure out exactly what they would be responsible for, so just poke them and let's move on.</legend>
+				<label><input id="checkbox1" type="checkbox" name="checkbox1" value="checkbox1" class="inline" required>Poke me!</label>
+				<label><input id="checkbox2" type="checkbox" name="checkbox2" value="checkbox2" class="inline" required>Poke me too!</label>
+		</div>
+	</fieldset>
+	<fielset>
+		<div>
+			<label>Now that we're almost done, leave some feedback here about how much you liked this survey form:
+			<textarea id="feedback" name="feedback" rows="5" cols="30" placeholder="This is where you write funny review"></textarea>
+			</label>
+		</div>
+	</fieldset>
+	<input id="submit" type="submit" value="We're done here">
+    </form>
+  </body>
+</html>
