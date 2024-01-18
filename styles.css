@@ -11,6 +11,7 @@ html {
 
 body {
   background-color: white;
+  overflow: hidden;
 }
 
 .container {
@@ -263,6 +264,10 @@ footer {
 }
 
 @media only screen and (max-width: 768px) {
+  body {
+    overflow: auto;
+  }
+
   .nav {
     height: auto;
     flex-direction: column;
@@ -281,7 +286,8 @@ footer {
   .welcome-section {
     padding: 20px;
     text-align: center;
-    height: 90vh;
+    height: 75vh;
+    margin-bottom: 100px;
   }
 
   .welcome-section h1,
@@ -319,7 +325,7 @@ footer {
   }
 
   .contact-section-header {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-bottom: 30px;
   }
 
