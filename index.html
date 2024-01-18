@@ -120,14 +120,17 @@
             event.preventDefault();
 
             var hash = this.hash;
-            var scrollSpeed = 300;
+            var scrollSpeed = 300; // Твоя скорость прокрутки
 
             $("html, body").animate(
               {
                 scrollTop: $(hash).offset().top,
               },
-              scrollSpeed
+              scrollSpeed,
+              function () {}
             );
+
+            return false;
           }
         });
       });
