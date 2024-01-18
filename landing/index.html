@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script
+      src="https://kit.fontawesome.com/52a9f9bf53.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Product Landing Page</title>
+  </head>
+  <body>
+    <div>
+      <header id="header">
+        <div class="logo">
+          <img
+            id="header-img"
+            src="https://i.imgur.com/GgNzXlB.png"
+            alt="Lazy logo"
+          />
+        </div>
+        <nav id="nav-bar">
+          <ul>
+            <li><a class="nav-link" href="#facts">Facts</a></li>
+            <li><a class="nav-link" href="#video-container">Video</a></li>
+            <li><a class="nav-link" href="#contacts">Contacts</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="container"></div>
+      <section id="hero">
+        <h2>What do you think about this page?</h2>
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+          <input
+            name="email"
+            id="email"
+            type="email"
+            placeholder="Enter your email address"
+            required=""
+          />
+          <input id="submit" type="submit" value="Let's go" class="btn" />
+        </form>
+      </section>
+      <div class="container">
+        <section id="facts">
+          <div class="grid">
+            <div class="icon">
+              <i class="fa-solid fa-code fa-2xl"></i>
+            </div>
+            <div class="desc">
+              <h2>Coding everyday</h2>
+              <p>
+                Those who do not code every day will not achieve much. Our task
+                is to become better with each passing stage.
+              </p>
+            </div>
+          </div>
+          <div class="grid">
+            <div class="icon">
+              <i class="fa-regular fa-clock fa-2xl"></i>
+            </div>
+            <div class="desc">
+              <h2>Take your time</h2>
+              <p>
+                There are only 24 hours in the day and so many things to do,
+                from housework to good old procrastination. I think even taking
+                2-3 hours out of that time is better than taking 0 and not
+                learning anything.
+              </p>
+            </div>
+          </div>
+          <div class="grid">
+            <div class="icon">
+              <i class="fa-regular fa-circle-check fa-2xl"></i>
+            </div>
+            <div class="desc">
+              <h2>Path to success</h2>
+              <p>
+                No matter how difficult the path may seem, remember that no one
+                was born a programmer. You can only become one. The Internet
+                contains a lot of information, you just need to find it. Even if
+                at first you don't understand much of what you write in your
+                code, you will understand it in time, and you will also find
+                many new things you can add to your code and make it better.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section id="video-container">
+          <iframe
+            id="video"
+            height="315px"
+            src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ?rel=0&controls=0&showinfo=0"
+            frameborder="0"
+            allowfullscreen=""
+          ></iframe>
+        </section>
+        <section id="contacts">
+          <div class="grid">
+            <h2>You can find me here:</h2>
+            <div class="social-icons">
+              <a
+                href="https://www.linkedin.com/in/kirill-mikheev-6286b427b/"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin fa-2xl"></i
+              ></a>
+              <a href="https://github.com/LazyRedCat" target="_blank"
+                ><i class="fa-brands fa-github fa-2xl"></i
+              ></a>
+            </div>
+          </div>
+        </section>
+      </div>
+      <footer>
+        <span>©2023 All Rights Reserved</span>
+      </footer>
+    </div>
+  </body>
+</html>
