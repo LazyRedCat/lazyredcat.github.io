@@ -14,6 +14,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./scripts.js"></script>
   </head>
   <body>
     <nav id="navbar" class="nav">
@@ -45,7 +46,7 @@
         Here are some of the projects I did during my studies:
       </h2>
       <div class="projects-grid">
-        <a href="survey/index.html" class="project project-tile">
+        <a href="./survey/index.html" class="project project-tile">
           <img
             class="project-image"
             src="https://user-images.githubusercontent.com/143682146/264551775-5db868a6-68f7-417e-bf10-cece2960fda0.png"
@@ -53,7 +54,7 @@
           />
           <p class="project-title">Survey Form</p>
         </a>
-        <a href="tribute/index.html" class="project project-tile">
+        <a href="./tribute/index.html" class="project project-tile">
           <img
             class="project-image"
             src="https://user-images.githubusercontent.com/143682146/264556904-0306adf6-06ba-4c3b-b317-12c0e1acf7f2.png"
@@ -61,7 +62,7 @@
           />
           <p class="project-title">Tribute Page</p>
         </a>
-        <a href="techdoc/index.html" class="project project-tile">
+        <a href="./techdoc/index.html" class="project project-tile">
           <img
             class="project-image"
             src="https://user-images.githubusercontent.com/143682146/265553800-035c397e-3230-4437-8040-8bcbc854740e.png"
@@ -69,7 +70,7 @@
           />
           <p class="project-title">Technical Documentation</p>
         </a>
-        <a href="landing/index.html" class="project project-tile">
+        <a href="./landing/index.html" class="project project-tile">
           <img
             class="project-image"
             src="https://user-images.githubusercontent.com/143682146/271460087-5652f7fa-5d85-462d-b90a-138baf59fcd7.png"
@@ -97,87 +98,5 @@
     <footer>
       <p>&copy; 2023 All Rights Reserved</p>
     </footer>
-    <script>
-      // HIGHLIGHT NAVBAR OPTION
-      var links = document.querySelectorAll("#navbar a");
-
-      function highlightLink() {
-        for (var i = 0; i < links.length; i++) {
-          links[i].classList.remove("active");
-        }
-
-        this.classList.add("active");
-      }
-
-      for (var i = 0; i < links.length; i++) {
-        links[i].addEventListener("click", highlightLink);
-      }
-
-      // SMOOTH SCROLL ON ANCHOR LINK CLICK
-      $(document).ready(function () {
-        $("a[href^='#']").on("click", function (event) {
-          if (this.hash !== "") {
-            event.preventDefault();
-
-            var hash = this.hash;
-            var scrollSpeed = 300;
-
-            $("html, body").animate(
-              {
-                scrollTop: $(hash).offset().top,
-              },
-              scrollSpeed,
-              function () {
-                window.location.hash = hash;
-              }
-            );
-          }
-        });
-      });
-
-      // BUTTON CLICK EVENT FOR SMOOTH SCROLL TO PROJECTS SECTION
-      document.addEventListener("DOMContentLoaded", function () {
-        var button = document.getElementById("pill-button");
-        var navlink = document.querySelector(".nav-list a[href='#projects']");
-
-        button.addEventListener("click", function () {
-          var links = document.querySelectorAll(".nav-list a");
-          for (var i = 0; i < links.length; i++) {
-            links[i].classList.remove("active");
-          }
-
-          navlink.classList.add("active");
-
-          var projectsSection = document.getElementById("projects");
-          var scrollSpeed = 300;
-          projectsSection.scrollIntoView({
-            behavior: "smooth",
-            block: "start",
-            inline: "nearest",
-          });
-        });
-      });
-
-      // NAVBAR HEIGHT CALCULATION AND ADJUSTMENT
-      document.addEventListener("DOMContentLoaded", function () {
-        if (window.innerWidth > 768) {
-          const navbarHeight = document.querySelector(".nav").offsetHeight;
-          const totalPadding = navbarHeight + 50;
-
-          document.getElementById(
-            "projects"
-          ).style.paddingTop = `${totalPadding}px`;
-
-          window.addEventListener("resize", function () {
-            const navbarHeight = document.querySelector(".nav").offsetHeight;
-            const totalPadding = navbarHeight + 50;
-
-            document.getElementById(
-              "projects"
-            ).style.paddingTop = `${totalPadding}px`;
-          });
-        }
-      });
-    </script>
   </body>
 </html>
