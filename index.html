@@ -120,16 +120,13 @@
             event.preventDefault();
 
             var hash = this.hash;
-            var scrollSpeed = 300; // Твоя скорость прокрутки
+            var scrollSpeed = 300;
 
             $("html, body").animate(
               {
                 scrollTop: $(hash).offset().top,
               },
-              scrollSpeed,
-              function () {
-                window.location.hash = hash;
-              }
+              scrollSpeed
             );
           }
         });
@@ -149,7 +146,7 @@
           navlink.classList.add("active");
 
           var projectsSection = document.getElementById("projects");
-          var scrollSpeed = 300; // Твоя скорость прокрутки
+          var scrollSpeed = 300;
           projectsSection.scrollIntoView({
             behavior: "smooth",
             block: "start",
